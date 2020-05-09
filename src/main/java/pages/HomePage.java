@@ -44,6 +44,14 @@ public class HomePage {
         clickLinkText("File Upload");
         return new FileUploadPage(driver);
     }
+    public EntryAdPage goToEntryAd() {
+        clickLinkText("Entry Ad");
+        return new EntryAdPage(driver);
+    }
+    public WYSIWYGEditorPage goToWYSIWYGEditor() {
+        clickLinkText("WYSIWYG Editor");
+        return new WYSIWYGEditorPage(driver);
+    }
     public void clickLinkText(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
