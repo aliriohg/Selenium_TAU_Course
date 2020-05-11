@@ -52,6 +52,14 @@ public class HomePage {
         clickLinkText("WYSIWYG Editor");
         return new WYSIWYGEditorPage(driver);
     }
+    public FramesPage goToFramesPAge(){
+        clickLinkText("Frames");
+        return new FramesPage(driver);
+    }
+    public DynamicLoadingPage goToDynamicLoading(){
+        clickLinkText("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
     public void clickLinkText(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
