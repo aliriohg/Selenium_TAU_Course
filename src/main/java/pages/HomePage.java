@@ -60,6 +60,19 @@ public class HomePage {
         clickLinkText("Dynamic Loading");
         return new DynamicLoadingPage(driver);
     }
+    public LargeAndDeepDomPage goToLargeDeepDOM(){
+        clickLinkText("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+    public InfiniteScrollPage goToInfiniteScroll(){
+        clickLinkText("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+    public MultipleWindowsPage goToMultipleWindows(){
+        clickLinkText("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
+
     public void clickLinkText(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
